@@ -1,5 +1,5 @@
 body {
-  background-color: #d4d4d4;
+  background-color: white;
 }
 h1 {
   padding-top: 20px;
@@ -12,6 +12,8 @@ h3 {
   padding: 20px;
   border: 1px solid gray;
   border-radius: 5px;
+  background-color: #d4d4d4;
+  margin: 20px auto;
 }
 form {
   padding-top: 15px;
