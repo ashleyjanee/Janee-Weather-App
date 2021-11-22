@@ -7,6 +7,12 @@ h1 {
 h3 {
   font-size: 65px;
 }
+.weather-app {
+  max-width: 600px;
+  padding: 20px;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
 form {
   padding-top: 15px;
 }
