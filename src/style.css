@@ -21,23 +21,5 @@ form {
 .weather-temp {
   padding-left: 20px;
 }
-.sun-icon {
-  color: yellow;
-  font-size: 95px;
-}
-.sun-icon-2 {
-  color: yellow;
-  font-size: 35px;
-}
-.cloud-icon {
-  color: white;
-  font-size: 35px;
-}
-.heavy-rain {
-  color: #1e90ff;
-  font-size: 35px;
-}
-.wind-icon {
-  font-size: 35px;
-  color: #00bfff;
-}
+
+
