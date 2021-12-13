@@ -24,6 +24,33 @@ function search(event) {
 let form = document.querySelector("#search-input");
 form.addEventListener("submit", search);
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  let forecastHTML = `<div class="row">`;
+  let days = ["Saturday", "Sunday", "Monday"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+          <div class="col-2">
+            <div class="weather-forecast-date">${day}</div>
+            <img
+              src="https://ssl.gstatic.com/onebox/weather/48/rain.png"
+              alt=""
+              width="36"
+            />
+            <div class="weather-forecast-temp">
+              <span class="weather-forecast-temp-max">22°</span>
+              <span class="weather-forecast-temp-min">-5°</span>
+            </div>
+          </div>
+        `;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
 function showTemperature(response) {
   let city = response.data.name;
   celsiusTemp = response.data.main.temp;
@@ -43,6 +70,8 @@ function showTemperature(response) {
   descriptionElement.innerHTML = response.data.weather[0].description;
   humidityElement.innerHTML = response.data.main.humidity;
   windElement.innerHTML = Math.round(response.data.wind.speed);
+
+  displayForecast();
 }
 function showPosition(position) {
   let latitude = position.coords.latitude;
