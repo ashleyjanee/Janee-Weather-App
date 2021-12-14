@@ -4,6 +4,9 @@ body {
 h1 {
   padding-top: 20px;
 }
+h2 {
+  font-size: 20px;
+}
 .temperature {
   font-size: 65px;
 }
